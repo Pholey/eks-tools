@@ -19,5 +19,5 @@ RUN chmod +x *
 RUN mv heptio-authenticator-aws aws-iam-authenticator
 
 FROM alpine
-RUN apk add --update --no-cache ca-certificates openssl
+RUN apk add --update --no-cache ca-certificates openssl git
 COPY --from=base /prepared /usr/bin
