@@ -1,4 +1,3 @@
-# FROM golang:1.11
 FROM alpine AS base
 
 ARG KUBECTL_VERSION=v1.13.0
